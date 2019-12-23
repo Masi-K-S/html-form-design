@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/style.css">
+    <meta charset="utf-8">
+    <title>redpepperpizza.com</title>
+    <!-- changed the sha value from sha384- to sha256- for font-awesome -->
+  </head>
+  <body>
+      <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+                    <li><a href="#">Recipes <i class="fas fa-list"></i></a></li>
+                    <li class="active-page"><a href="#">Order-Pizza <i class="fas fa-utensils"></i></a></li>
+                    <li><a href="#">Call Now <i class="fas fa-mobile-alt"></i></a></li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <h1>Red Pepper Pizzaria</h1>
+            </div>
+      </header>
+
+      <main id="contents"  class="main-body">
+              <!-- <img src="http://www.startgroupng.com/noroff-front-end-project-folder/Images/Pizza-image.jpg" alt=""> -->
+                <!-- form area -->
+                  <form class="order-pizza" action="http://www.startgroupng.com/noroff-front-end-project-folder/HTML-and-CSS/forms-responsive" method="post">
+                    <h3>Order Pizza to your doorstep</h3>
+                    <label for="f-name">First Name</label>
+                    <input type="text" name="fname" value="first name" class="input" required id="f-name">
+                    <br>
+                    <label for="s-name">Surname</label>
+                    <input type="text" name="sname" value="Surname" class="input" id="s-name" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" value="Enter email id" id="email" class="input">
+                    <br>
+                    <label for="tele">Phone</label>
+                    <input type="tel" name="tele" value="47" class="input" id="tele" required>
+
+                    <fieldset class="address-feild">
+                    <label for="strname">Street</label>
+                    <input type="text" name="strname" value="Enter your street name here" id="strname" class="input" required>
+                    <label for="post-code">Post Code</label>
+                    <input type="text" name="post-code" value="6000" class="input" id="post-code" required>
+                    <label for="city">City</label>
+                    <input type="text" name="city" value="Oslo" id="city" class="input" >
+                    </fieldset>
+
+                    <fieldset class="pizza-section">
+                    <h3>Tell Us About Your Pizza Preference</h3>
+
+                    <div class="styled-select">
+                      <h5>Pizza Crust</h5>
+                      <select name="crust" class="crust">
+                      <option value="thick">Thick</option>
+                      <option value="thin">Thin</option>
+                      </select>
+                      </div>
+                      <h5>Pizza Options</h5>
+                    <div class="select-box">
+                        <select class="pizza-type" name="Pizzas">
+                        <option value="">Amerikana</option>
+                        <option value="">Red Italian</option>
+                        <option value="">Sicily</option>
+                        <option value="">Chicken Smile</option>
+                        <option value="">Milano</option>
+                        </select>
+                      </div>
+
+                        <!-- <div class="checkbox-container">
+                        <label for="hot-sauce" class="sauce-chilly-level">Hot Sauce
+                        <input type="radio" name="hot-sauce" value="Hot" class="sauce-type">
+                        <span class="checkmark"></span>
+                        </label>
+                        <label for="hot-sauce" class="sauce-chilly-level">Mild Sauce
+                        <input type="radio" name="hot-sauce" value="Mild" class="Sauce-type">
+                        <span class="checkmark"></span>
+                        </label>
+                      </div> -->
+
+                      <div class="sides">
+                          <h5>Sides</h5>
+                          <input type="checkbox" name="paprika-1" value="paprika" >paprika
+                          <input type="checkbox" name="fresh-tomat-1" value="fresh-tomat">Fresh tomat
+                          <input type="checkbox" name="sallad-1" value="sallad-1" >sallad
+                          <input type="checkbox" name="cucumber" value="cucumber-1"> Cucumber
+                        </div>
+                      </fieldset>
+                      <div id="submit">
+                        <input type="submit" name="submit" value="Order Now" class="order-btn">
+                    </div>
+                  </form>
+      </main>
+      <footer class="footer">
+            <div class="address">
+                  <div class="gate-number">
+                        <h5>address:</h5>
+                        <p>Kongensgata 34, Oslo</p>
+                  </div>
+            </div>
+            <div class="social-media">
+                  <ul>
+                        <li> <a href="https://www.youtube.com/watch?v=7o0VFG7lOwU" target="_blank"><i class="fab fa-youtube-square"></i></a> </li>
+                        <li> <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> </li>
+                        <li> <a href="https://www.facebook.com/NoroffRecords/" target="_blank"> <i class="fab fa-facebook-square"></i></a></li>
+                  </ul>
+
+          </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header{
+  width:  100%;
+  height: 100px;
+  text-align: center;
+  background-color: #4a4a4f;
+  /* position: fixed; */
+  border-bottom: 1px solid #ffffff;
+}
+
+ header nav{
+   display: inline;
+   float: right;
+ }
+
+ nav ul{
+   list-style: none;
+ }
+
+ nav li{
+   display: inline-block;
+   margin-left: 80px;
+   margin-right: 50px;
+   font-size: 1.5em;
+   list-style-type: none;
+   margin-top: 20px;
+ }
+
+ .active-page{
+   border-bottom: 1px solid #ffffff;
+ }
+
+ nav a{
+   text-decoration: none;
+   color: #ffffff;
+   opacity: 0.6;
+   font-family: monospace;
+ }
+
+/* a:visited{ */
+  /* color: red; */
+/* } */
+
+nav a:hover{
+  color: #ffb83e;
+}
+nav a:active{
+  color: #ffb83e;
+}
+
+
+.logo{
+  width: 25%;
+  height: 100%;
+  background-color: red;
+  float: left;
+}
+
+.logo h1{
+  font-size: 200%;
+  font-family: sans-serif;
+  word-spacing: 4px;
+  letter-spacing: 4px;
+}
+
+.logo:hover{
+  background-color: #ffb83e;
+  cursor: pointer;
+}
+.logo h1:hover{
+  color: #ffffff;
+}
+
+
+ nav a{
+   text-decoration: none;
+ }
+nav a:hover{
+  border-bottom: 1px solid red;
+  font-size: 150%;
+}
+
+
+ #contents{
+   clear: left;
+   background-image: url("http://www.startgroupng.com/noroff-front-end-project-folder/Images/Pizza-image.jpg");
+   background-size: cover;
+   background-position: center;
+   /* width: 80%; */
+   height: 1200px;
+   /* margin: 0 auto; */
+ }
+
+.order-pizza{
+color: #fff;
+background-color: rgba(60, 60, 60, 0.5);
+max-width: 500px;
+position: absolute;
+left: 10%;
+padding: 40px;
+
+}
+
+
+.order-pizza h3{
+  color: #ffb83e;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.order-pizza h3:hover{
+  color: #ffffff;
+  font-size: 22px;
+  cursor: crosshair;
+}
+
+
+.input{
+  background-color: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 40px;
+  margin: 5px 0px 20px 0px;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+
+.input:active{
+  border-color: red;
+}
+
+.input:hover{
+  border-color: red;
+}
+.pizza-section{
+  /* border-color: rgb(222, 0, 0, 0.2); */
+  border-color: #ffb83e;
+}
+
+.pizza-section h4{
+  font-family: sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+.pizza-section h5{
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.styled-select{
+  background: transparent;
+  width: 100%;
+  font-size: 1em;
+}
+.select-box .styled-select{
+  position: relative;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+.styled-select select{
+  background: #ffb83e;
+  /* opacity: 0.8; */
+  color: white;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(134, 121, 121, 0.5);
+  outline: none;
+
+}
+
+.select-box  select{
+  background: #ffb83e;
+  /* opacity: 0.8; */
+  color: white;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(134, 121, 121, 0.5);
+  outline: none;
+}
+
+.select-box  select:hover{
+  background-color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.styled-select select:hover{
+  background-color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sides{
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+  font-family: sans-serif;
+  /* line-height: 12px; */
+}
+
+input[type="checkbox"]{
+  width: 40px;
+  height: 16px;
+  /* -webkit-appearance: none; */
+  outline: none;
+  transition: .5s;
+  font-size: 18px;
+
+}
+
+input[type="checkbox"]:before{
+  /* content: ''; */
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 4px solid red; */
+  box-sizing: border-box;
+  transition: .5s;
+  cursor: pointer;
+}
+#submit{
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.order-btn{
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+  float: left;
+  background-color: #ffb83e;
+  color: white;
+  font-family: monospace;
+}
+
+.order-btn:hover{
+  background-color: white;
+  color: #ffb83e;
+  text-decoration: underline;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1400px ){
+  header{
+    width: 100%;
+    height: 100px;
+  }
+
+  .logo{
+    display: none;
+  }
+h1{
+  display: none;
+}
+
+header a{
+  font-size: 16px;
+}
+
+header a:hover{
+  font-size: 22px;
+  border-bottom: 2px solid red;
+}
+
+.order-pizza h3{
+  font-size: 16px;
+}
+
+.order-pizza h3:hover{
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.pizza-section h3{
+  color: #ffb83e;
+}
+
+.styled-select select{
+  background: #ffb83e;
+  /* opacity: 0.8; */
+  color: white;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(134, 121, 121, 0.5);
+  outline: none;
+
+}
+
+.select-box  select{
+  background: #ffb83e;
+  /* opacity: 0.8; */
+  color: white;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(134, 121, 121, 0.5);
+  outline: none;
+}
+
+
+
+
+/* End of select boxes styling */
+.order-btn{
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  float: left;
+  background-color: #ffb83e;
+  color: white;
+  font-family: monospace;
+}
+
+}
+/* Second media query for screens less than 992px */
+
+@media only screen and (max-width: 992px){
+  header{
+    width: 100%;
+    height: 200px;
+    background-color: #808080;
+    display: block;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .logo h1{
+    display: none;
+  }
+
+  header a{
+    font-size: 14px;
+  }
+  header a:hover{
+    font-size: 22px;
+  }
+
+
+  .styled-select select{
+    background: #ffb83e;
+    /* opacity: 0.8; */
+    color: white;
+    padding: 10px;
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(134, 121, 121, 0.5);
+    outline: none;
+
+  }
+
+  .select-box  select{
+    background: #ffb83e;
+    /* opacity: 0.8; */
+    color: white;
+    padding: 10px;
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(134, 121, 121, 0.5);
+    outline: none;
+  }
+
+
+
+
+  /* End of select boxes styling */
+  .order-btn{
+    margin-top: 5px;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    float: left;
+    background-color: #ffb83e;
+    color: white;
+    font-family: monospace;
+  }
+
+
+}
+
+
+
+ footer{
+   width: 100%;
+   height: 150px;
+   background-color: #4a4a4f;
+   opacity: 0.8;
+   border-top: 1px solid #ffffff;
+ }
+
+ .address{
+   width: 30%;
+   text-align: center;
+   margin-top: 10px;
+   float: left;
+ }
+
+ .gate-number{
+   display: inline-block;
+   color: #ffffff;
+   font-size: 20px;
+ }
+
+  .gate-number:hover{
+    color:  #ffb83e;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+
+.social-media{
+  width: 70%;
+}
+
+.social-media ul{
+  list-style: none;
+}
+
+.social-media li{
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 50px;
+  text-align: center;
+  float: right;
+}
+
+.social-media a{
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 150%;
+}
+
+.social-media a:hover{
+  color: #ffb83e;
+  font-size: 200%;
+}
+
+/* http://www.startgroupng.com/noroff-front-end-project-folder/HTML-and-CSS/forms-responsive */
+
+/* So all seems very ok though, it could be better */
+/* I want to attempt media query now to respond to different screen sizes */
